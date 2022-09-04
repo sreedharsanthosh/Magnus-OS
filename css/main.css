@@ -10,11 +10,32 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: bpdots;
   background: #151515;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 0rem;
+}
+nav .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+}
+nav .nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
 }
 
 .home {
