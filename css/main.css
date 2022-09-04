@@ -1,0 +1,237 @@
+@font-face {
+  font-family: bpdots;
+  src: url("../Font/BPdotsUnicase.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: bpdots;
+  background: #151515;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.home .text {
+  color: white;
+  width: 40%;
+}
+.home .text h1 {
+  font-size: 4rem;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #fc9700;
+          text-decoration-color: #fc9700;
+  text-decoration-thickness: 8px;
+}
+.home .text p {
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  margin: 1.5rem 0rem;
+}
+.home .text button {
+  padding: 0.7rem 2rem;
+  background: #fc9700;
+  border: 1px solid #fc9700;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  color: white;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.home .text button:hover {
+  background: transparent;
+}
+.home .image img {
+  width: 30vw;
+}
+@media only screen and (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+  .home .text {
+    width: 90%;
+    margin: 3rem 0rem;
+  }
+  .home .image img {
+    width: auto;
+  }
+}
+
+.primary-heading {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.features .features-container {
+  display: inline-grid;
+  gap: 100px;
+  grid-template-columns: auto auto;
+  margin: 5rem 0rem;
+}
+.features .features-container .features-card {
+  position: relative;
+  background: #404040;
+  padding: 2rem 2rem;
+  border-radius: 3rem;
+  color: white;
+  width: 20vw;
+  min-height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.features .features-container .features-card .icon {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #fc9700;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  top: -35px;
+  left: -35px;
+}
+.features .features-container .features-card .text {
+  color: white;
+}
+.features .features-container .features-card .text h1 {
+  font-size: 3rem;
+}
+.features .features-container .features-card .text p {
+  font-size: 1.3rem;
+}
+@media only screen and (max-width: 1200px) {
+  .features .features-container {
+    padding: 2rem;
+  }
+  .features .features-container .features-card {
+    width: 35vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .features .features-container {
+    grid-template-columns: 1fr;
+  }
+  .features .features-container .features-card {
+    width: 60vw;
+  }
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+}
+.team .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+.team .container .card {
+  width: 25vw;
+  margin: 3rem;
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  background: transparent;
+  border: 2px solid #fc9700;
+  border-radius: 1.5rem;
+}
+.team .container .card .img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.team .container .card .text {
+  text-align: center;
+}
+.team .container .card .text h1 {
+  font-size: 3rem;
+  margin: 1rem;
+}
+.team .container .card .text .icons {
+  align-self: center;
+  font-size: 2rem;
+  margin: 2rem;
+}
+.team .container .card .text .icons a {
+  text-decoration: none;
+  color: white;
+}
+@media only screen and (max-width: 1200px) {
+  .team .container .card {
+    width: 35vw;
+    margin: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .team .container .card {
+    width: 60vw;
+  }
+}
+
+.screenshots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.screenshots .swiper {
+  margin: 4rem;
+  width: 20vw;
+}
+.screenshots .swiper .swiper-wrapper .swiper-slide img {
+  width: 20vw;
+}
+@media only screen and (max-width: 922px) {
+  .screenshots .swiper {
+    width: 30vw;
+  }
+  .screenshots .swiper .swiper-wrapper .swiper-slide img {
+    width: 30vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .screenshots .swiper {
+    width: 40vw;
+  }
+  .screenshots .swiper .swiper-wrapper .swiper-slide img {
+    width: 40vw;
+  }
+}
+
+footer {
+  background: #404040;
+  color: white;
+  padding: 2rem 0rem;
+}
+footer h1 {
+  font-size: 4rem;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
