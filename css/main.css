@@ -37,6 +37,11 @@ nav .nav-links li a {
   color: white;
   font-size: 2rem;
 }
+@media only screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
 
 .home {
   display: flex;
@@ -81,11 +86,12 @@ nav .nav-links li a {
     flex-direction: column;
   }
   .home .text {
-    width: 90%;
-    margin: 3rem 0rem;
+    width: 100%;
+    padding: 0rem;
+    margin: 2rem 0rem;
   }
   .home .image img {
-    width: auto;
+    width: 70vw;
   }
 }
 
@@ -152,10 +158,11 @@ nav .nav-links li a {
 }
 @media only screen and (max-width: 768px) {
   .features .features-container {
+    padding: 1rem;
     grid-template-columns: 1fr;
   }
   .features .features-container .features-card {
-    width: 60vw;
+    width: 80vw;
   }
 }
 
@@ -213,7 +220,8 @@ nav .nav-links li a {
 }
 @media only screen and (max-width: 768px) {
   .team .container .card {
-    width: 60vw;
+    width: 90vw !important;
+    margin: 1rem 0rem;
   }
 }
 
@@ -239,11 +247,14 @@ nav .nav-links li a {
   }
 }
 @media only screen and (max-width: 768px) {
+  .screenshots .primary-heading {
+    font-size: 3rem;
+  }
   .screenshots .swiper {
-    width: 40vw;
+    width: 45vw;
   }
   .screenshots .swiper .swiper-wrapper .swiper-slide img {
-    width: 40vw;
+    width: 45vw;
   }
 }
 

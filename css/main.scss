@@ -40,6 +40,9 @@ nav {
       font-size: 2rem;
     }
   }
+  @media only screen and(max-width: 768px) {
+    display: none;
+  }
 }
 
 .home {
@@ -83,11 +86,12 @@ nav {
   @media only screen and(max-width: 768px) {
     flex-direction: column;
     .text {
-      width: 90%;
-      margin: 3rem 0rem;
+      width: 100%;
+      padding: 0rem;
+      margin: 2rem 0rem;
     }
     .image img {
-      width: auto;
+      width: 70vw;
     }
   }
 }
@@ -154,9 +158,10 @@ nav {
   }
   @media only screen and(max-width: 768px) {
     .features-container {
+      padding: 1rem;
       grid-template-columns: 1fr;
       .features-card {
-        width: 60vw;
+        width: 80vw;
       }
     }
   }
@@ -218,7 +223,8 @@ nav {
   @media only screen and(max-width: 768px) {
     .container {
       .card {
-        width: 60vw;
+        width: 90vw !important;
+        margin: 1rem 0rem;
       }
     }
   }
@@ -249,11 +255,14 @@ nav {
     }
   }
   @media only screen and(max-width: 768px) {
+    .primary-heading {
+      font-size: 3rem;
+    }
     .swiper {
-      width: 40vw;
+      width: 45vw;
       .swiper-wrapper .swiper-slide {
         img {
-          width: 40vw;
+          width: 45vw;
         }
       }
     }
