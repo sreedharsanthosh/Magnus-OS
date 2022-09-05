@@ -22,6 +22,15 @@ body {
   background: #151515;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+h1,
+h3 {
+  font-weight: 400;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -98,8 +107,8 @@ nav {
 
 .primary-heading {
   font-size: 4rem;
-  font-weight: bold;
   color: white;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -177,15 +186,13 @@ nav {
     flex-wrap: wrap;
     margin: 3rem;
     .card {
-      width: 25vw;
+      min-width: 30vw;
       margin: 3rem;
-      min-height: 30vh;
+      min-height: 25vh;
       display: flex;
       align-items: center;
-      justify-content: space-around;
       color: white;
-      flex-direction: column;
-      padding: 2rem 1rem;
+      padding: 1rem 1rem;
       background: transparent;
       border: 2px solid #fc9700;
       border-radius: 1.5rem;
@@ -195,19 +202,18 @@ nav {
         border-radius: 50%;
       }
       .text {
-        text-align: center;
+        margin-left: 2rem;
         h1 {
           font-size: 3rem;
-          margin: 1rem;
+          margin: 1rem 0rem;
         }
         .icons {
           a {
             text-decoration: none;
             color: white;
           }
-          align-self: center;
           font-size: 2rem;
-          margin: 2rem;
+          margin: 2rem 0rem;
         }
       }
     }
@@ -215,16 +221,46 @@ nav {
   @media only screen and(max-width: 1200px) {
     .container {
       .card {
-        width: 35vw;
+        width: 50vw;
         margin: 2rem;
+        .img img {
+          width: 125px;
+          height: 125px;
+        }
       }
     }
   }
   @media only screen and(max-width: 768px) {
     .container {
+      margin: 2rem 1rem;
       .card {
-        width: 90vw !important;
+        padding: 0.5rem 1rem;
+        width: 100vw !important;
         margin: 1rem 0rem;
+        .text {
+          h1 {
+            font-size: 2rem;
+          }
+          h3 {
+            font-size: 1rem;
+          }
+          .icons {
+            margin: 1rem 0rem;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and(max-width: 383px) {
+    .container {
+      .card {
+        flex-direction: column;
+        padding: 1rem 0rem;
+        .text {
+          margin: 1rem 1rem;
+          align-items: flex-start;
+        }
       }
     }
   }
